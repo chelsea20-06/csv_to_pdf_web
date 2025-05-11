@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Générateur CSV en PDF</title>
+    <meta charset="UTF-8">
+    <title>Générateur PDF depuis CSV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Générer un PDF à partir d'un fichier CSV</h1>
-  <form action="/generate_pdf" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" accept=".csv" required>
-    <button type="submit">Générer</button>
-  </form>
+    <h1>Convertisseur CSV → PDF (Format A4)</h1>
+
+    <form action="/generate" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="csv_file">Choisissez un fichier CSV :</label><br>
+            <input type="file" name="csv_file" accept=".csv" required>
+        </div>
+
+        <div>
+            <label for="pdf_filename">Nom du fichier PDF :</label><br>
+            <input type="text" name="pdf_filename" placeholder="ex: mon_document.pdf" required>
+        </div>
+
+        <button type="submit">Générer le PDF</button>
+    </form>
 </body>
 </html>
+

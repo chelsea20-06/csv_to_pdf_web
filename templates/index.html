@@ -2,18 +2,58 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Générateur PDF depuis CSV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur CSV → PDF (Format A4)</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
             padding: 40px;
+            text-align: center;
         }
 
-        input, button {
-            padding: 10px;
-            margin: 10px;
+        h1 {
+            color: #4CAF50;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
             font-size: 16px;
+        }
+
+        input[type="file"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>

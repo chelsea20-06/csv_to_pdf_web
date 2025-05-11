@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Générateur CSV en PDF</title>
+</head>
+<body>
+  <h1>Générer un PDF à partir d'un fichier CSV</h1>
+  <form action="/generate_pdf" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".csv" required>
+    <button type="submit">Générer</button>
+  </form>
+</body>
+</html>
